@@ -1,26 +1,29 @@
-pipeline {
+pipeline{
     agent any
-    tools {
-        maven 'Maven'
-        jdk 'JDK'
+    environment {
+        PATH = "$PATH:C:/Program Files/apache-maven-3.8.6/bin"
     }
-    stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', credentialsId: 'Geo12345678@', url: 'https://github.com/Geovany12345/Hotel_Los_Juanes'
+    stages{
+       stage('GetCode'){
+            steps{
+                git 'https://github.com/Geovany12345/Hotel_Los_Juanes.git'
             }
-        }
-        stage('Build') {
-            steps {
+         }        
+       stage('Build'){
+            steps{
                 sh 'mvn clean package'
             }
+         }
+        stage('SonarQube analysis') {
+//    def scannerHome = tool 'sonar-scanner';
+        steps{
+        withSonarQubeEnv('sonar-scanner') { 
+        // If you have configured more than one global server connection, you can specify its name
+//      sh "${scannerHome}/bin/sonar-scanner"
+        sh "mvn sonar:sonar"
+    }
         }
-        stage('SonarQube Analysis') {
-            steps {
-                withSonarQubeEnv('sonar-scanner') {
-                    sh 'mvn sonar:sonar'
-                }
-            }
         }
+       
     }
 }
