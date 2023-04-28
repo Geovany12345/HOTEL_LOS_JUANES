@@ -6,7 +6,7 @@ pipeline{
     stages{
        stage('GetCode'){
             steps{
-                git 'https://github.com/Geovany12345/Hotel_Los_Juanes.git'
+                git 'https://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@github.com/Geovany12345/Hotel_Los_Juanes.git'
             }
          }        
        stage('Build'){
