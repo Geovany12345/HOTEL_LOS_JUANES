@@ -1,29 +1,26 @@
 pipeline{
     agent any
     environment {
-        PATH = "$PATH:C:/Program Files/apache-maven-3.8.6/bin"
+        PATH = "$PATH:'C:/Program Files/apache-maven-3.8.6/bin'"
+        SONARQUBE_SCANNER_PARAMS = "${WORKSPACE}/sonar-project.properties"
     }
     stages{
-       stage('GetCode'){
+        stage('GetCode'){
             steps{
                 git 'https://github.com/Geovany12345/Hotel_Los_Juanes.git'
             }
-         }        
-       stage('Build'){
+        }        
+        stage('Build'){
             steps{
                 sh 'mvn clean package'
             }
-         }
+        }
         stage('SonarQube analysis') {
-//    def scannerHome = tool 'sonar-scanner';
-        steps{
-        withSonarQubeEnv('sonar-scanner') { 
-        // If you have configured more than one global server connection, you can specify its name
-//      sh "${scannerHome}/bin/sonar-scanner"
-        sh "mvn sonar:sonar"
-    }
+            steps{
+                withSonarQubeEnv('sonar-scanner') { 
+                    sh "mvn sonar:sonar"
+                }
+            }
         }
-        }
-       
     }
 }
