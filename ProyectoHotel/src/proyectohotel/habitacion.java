@@ -7,7 +7,7 @@ package proyectohotel;
 
 /**
  *
- * @author Yutokiva
+ * @author ALE
  */
 public class habitacion {
     Integer id_habitacion;
