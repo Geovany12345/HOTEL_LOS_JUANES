@@ -7,7 +7,7 @@ package proyectohotel;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class personas {
     String identificacion;

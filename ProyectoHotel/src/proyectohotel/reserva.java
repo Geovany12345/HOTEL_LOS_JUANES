@@ -7,7 +7,7 @@ package proyectohotel;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class reserva {
     Integer id_reserva;

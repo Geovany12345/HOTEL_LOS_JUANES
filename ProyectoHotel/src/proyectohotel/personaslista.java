@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class personaslista {
          private List<personas> persona= new ArrayList<>();

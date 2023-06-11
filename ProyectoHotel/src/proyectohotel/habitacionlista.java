@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class habitacionlista {
        private List<habitacion> habitaciones= new ArrayList<>();

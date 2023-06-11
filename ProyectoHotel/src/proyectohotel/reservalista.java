@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class reservalista {
         private List<reserva> reservas= new ArrayList<>();
