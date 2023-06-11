@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceRef;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 @WebServlet(name = "registrarc", urlPatterns = {"/registrarc"})
 public class registrarc extends HttpServlet {

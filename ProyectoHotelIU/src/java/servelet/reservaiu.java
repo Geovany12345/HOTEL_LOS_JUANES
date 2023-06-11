@@ -16,7 +16,7 @@ import proyectohotel.reserva;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class reservaiu {
      private List<reserva> recursoi = new ArrayList<>();

@@ -14,7 +14,7 @@ import proyectohotel.personas;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class personaiu {
     private List<personas> recursoi = new ArrayList<>();

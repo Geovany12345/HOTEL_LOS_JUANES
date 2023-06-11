@@ -393,8 +393,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EliminarHabitacion }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EliminarHabitacion }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link EliminarHabitacion }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "EliminarHabitacion")
     public JAXBElement<EliminarHabitacion> createEliminarHabitacion(EliminarHabitacion value) {
@@ -402,8 +406,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EliminarHabitacionResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EliminarHabitacionResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link EliminarHabitacionResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "EliminarHabitacionResponse")
     public JAXBElement<EliminarHabitacionResponse> createEliminarHabitacionResponse(EliminarHabitacionResponse value) {
@@ -411,8 +419,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Eliminarpersonas }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Eliminarpersonas }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Eliminarpersonas }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "Eliminarpersonas")
     public JAXBElement<Eliminarpersonas> createEliminarpersonas(Eliminarpersonas value) {
@@ -420,8 +432,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EliminarpersonasResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EliminarpersonasResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link EliminarpersonasResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "EliminarpersonasResponse")
     public JAXBElement<EliminarpersonasResponse> createEliminarpersonasResponse(EliminarpersonasResponse value) {
@@ -429,8 +445,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Eliminarreserva }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Eliminarreserva }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Eliminarreserva }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "Eliminarreserva")
     public JAXBElement<Eliminarreserva> createEliminarreserva(Eliminarreserva value) {
@@ -438,8 +458,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EliminarreservaResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EliminarreservaResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link EliminarreservaResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "EliminarreservaResponse")
     public JAXBElement<EliminarreservaResponse> createEliminarreservaResponse(EliminarreservaResponse value) {
@@ -447,8 +471,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link IngresarHabitacion }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link IngresarHabitacion }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link IngresarHabitacion }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "IngresarHabitacion")
     public JAXBElement<IngresarHabitacion> createIngresarHabitacion(IngresarHabitacion value) {
@@ -456,8 +484,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link IngresarHabitacionResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link IngresarHabitacionResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link IngresarHabitacionResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "IngresarHabitacionResponse")
     public JAXBElement<IngresarHabitacionResponse> createIngresarHabitacionResponse(IngresarHabitacionResponse value) {
@@ -465,8 +497,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link IngresarReserva }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link IngresarReserva }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link IngresarReserva }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "IngresarReserva")
     public JAXBElement<IngresarReserva> createIngresarReserva(IngresarReserva value) {
@@ -474,8 +510,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link IngresarReservaResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link IngresarReservaResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link IngresarReservaResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "IngresarReservaResponse")
     public JAXBElement<IngresarReservaResponse> createIngresarReservaResponse(IngresarReservaResponse value) {
@@ -483,8 +523,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Ingresarpersona }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Ingresarpersona }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Ingresarpersona }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "Ingresarpersona")
     public JAXBElement<Ingresarpersona> createIngresarpersona(Ingresarpersona value) {
@@ -492,8 +536,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link IngresarpersonaResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link IngresarpersonaResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link IngresarpersonaResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "IngresarpersonaResponse")
     public JAXBElement<IngresarpersonaResponse> createIngresarpersonaResponse(IngresarpersonaResponse value) {
@@ -501,8 +549,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ModificaPersona }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ModificaPersona }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ModificaPersona }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ModificaPersona")
     public JAXBElement<ModificaPersona> createModificaPersona(ModificaPersona value) {
@@ -510,8 +562,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ModificaPersonaResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ModificaPersonaResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ModificaPersonaResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ModificaPersonaResponse")
     public JAXBElement<ModificaPersonaResponse> createModificaPersonaResponse(ModificaPersonaResponse value) {
@@ -519,8 +575,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ModificarHabitacion }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ModificarHabitacion }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ModificarHabitacion }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ModificarHabitacion")
     public JAXBElement<ModificarHabitacion> createModificarHabitacion(ModificarHabitacion value) {
@@ -528,8 +588,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ModificarHabitacionResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ModificarHabitacionResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ModificarHabitacionResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ModificarHabitacionResponse")
     public JAXBElement<ModificarHabitacionResponse> createModificarHabitacionResponse(ModificarHabitacionResponse value) {
@@ -537,8 +601,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Modificarreserva }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Modificarreserva }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Modificarreserva }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "Modificarreserva")
     public JAXBElement<Modificarreserva> createModificarreserva(Modificarreserva value) {
@@ -546,8 +614,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ModificarreservaResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ModificarreservaResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ModificarreservaResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ModificarreservaResponse")
     public JAXBElement<ModificarreservaResponse> createModificarreservaResponse(ModificarreservaResponse value) {
@@ -555,8 +627,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerHabitacion }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerHabitacion }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ObtenerHabitacion }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ObtenerHabitacion")
     public JAXBElement<ObtenerHabitacion> createObtenerHabitacion(ObtenerHabitacion value) {
@@ -564,8 +640,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerHabitacionResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerHabitacionResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ObtenerHabitacionResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ObtenerHabitacionResponse")
     public JAXBElement<ObtenerHabitacionResponse> createObtenerHabitacionResponse(ObtenerHabitacionResponse value) {
@@ -573,8 +653,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerHabitaciones }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerHabitaciones }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ObtenerHabitaciones }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ObtenerHabitaciones")
     public JAXBElement<ObtenerHabitaciones> createObtenerHabitaciones(ObtenerHabitaciones value) {
@@ -582,8 +666,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerHabitacionesResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerHabitacionesResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ObtenerHabitacionesResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ObtenerHabitacionesResponse")
     public JAXBElement<ObtenerHabitacionesResponse> createObtenerHabitacionesResponse(ObtenerHabitacionesResponse value) {
@@ -591,8 +679,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerTodasHabitacion }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerTodasHabitacion }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ObtenerTodasHabitacion }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ObtenerTodasHabitacion")
     public JAXBElement<ObtenerTodasHabitacion> createObtenerTodasHabitacion(ObtenerTodasHabitacion value) {
@@ -600,8 +692,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerTodasHabitacionResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerTodasHabitacionResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ObtenerTodasHabitacionResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ObtenerTodasHabitacionResponse")
     public JAXBElement<ObtenerTodasHabitacionResponse> createObtenerTodasHabitacionResponse(ObtenerTodasHabitacionResponse value) {
@@ -609,8 +705,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerTodasHabitacionescocpuadas }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerTodasHabitacionescocpuadas }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ObtenerTodasHabitacionescocpuadas }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ObtenerTodasHabitacionescocpuadas")
     public JAXBElement<ObtenerTodasHabitacionescocpuadas> createObtenerTodasHabitacionescocpuadas(ObtenerTodasHabitacionescocpuadas value) {
@@ -618,8 +718,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerTodasHabitacionescocpuadasResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerTodasHabitacionescocpuadasResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ObtenerTodasHabitacionescocpuadasResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ObtenerTodasHabitacionescocpuadasResponse")
     public JAXBElement<ObtenerTodasHabitacionescocpuadasResponse> createObtenerTodasHabitacionescocpuadasResponse(ObtenerTodasHabitacionescocpuadasResponse value) {
@@ -627,8 +731,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Obtenerpersonas }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Obtenerpersonas }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Obtenerpersonas }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "Obtenerpersonas")
     public JAXBElement<Obtenerpersonas> createObtenerpersonas(Obtenerpersonas value) {
@@ -636,8 +744,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerpersonasResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerpersonasResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ObtenerpersonasResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ObtenerpersonasResponse")
     public JAXBElement<ObtenerpersonasResponse> createObtenerpersonasResponse(ObtenerpersonasResponse value) {
@@ -645,8 +757,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Obtenerreservan }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Obtenerreservan }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Obtenerreservan }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "Obtenerreservan")
     public JAXBElement<Obtenerreservan> createObtenerreservan(Obtenerreservan value) {
@@ -654,8 +770,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerreservanResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerreservanResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ObtenerreservanResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ObtenerreservanResponse")
     public JAXBElement<ObtenerreservanResponse> createObtenerreservanResponse(ObtenerreservanResponse value) {
@@ -663,8 +783,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Obtenertodasreservan }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Obtenertodasreservan }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Obtenertodasreservan }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "Obtenertodasreservan")
     public JAXBElement<Obtenertodasreservan> createObtenertodasreservan(Obtenertodasreservan value) {
@@ -672,8 +796,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenertodasreservanResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenertodasreservanResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ObtenertodasreservanResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ObtenertodasreservanResponse")
     public JAXBElement<ObtenertodasreservanResponse> createObtenertodasreservanResponse(ObtenertodasreservanResponse value) {
@@ -681,8 +809,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Obtenertotadaspersonas }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Obtenertotadaspersonas }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Obtenertotadaspersonas }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "Obtenertotadaspersonas")
     public JAXBElement<Obtenertotadaspersonas> createObtenertotadaspersonas(Obtenertotadaspersonas value) {
@@ -690,8 +822,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenertotadaspersonasResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenertotadaspersonasResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ObtenertotadaspersonasResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ObtenertotadaspersonasResponse")
     public JAXBElement<ObtenertotadaspersonasResponse> createObtenertotadaspersonasResponse(ObtenertotadaspersonasResponse value) {
@@ -699,8 +835,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Obtenertotadaspersonastrabajadoras }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Obtenertotadaspersonastrabajadoras }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Obtenertotadaspersonastrabajadoras }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "Obtenertotadaspersonastrabajadoras")
     public JAXBElement<Obtenertotadaspersonastrabajadoras> createObtenertotadaspersonastrabajadoras(Obtenertotadaspersonastrabajadoras value) {
@@ -708,8 +848,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenertotadaspersonastrabajadorasResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenertotadaspersonastrabajadorasResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ObtenertotadaspersonastrabajadorasResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "ObtenertotadaspersonastrabajadorasResponse")
     public JAXBElement<ObtenertotadaspersonastrabajadorasResponse> createObtenertotadaspersonastrabajadorasResponse(ObtenertotadaspersonastrabajadorasResponse value) {
@@ -717,8 +861,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Inicarsecion }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Inicarsecion }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Inicarsecion }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "inicarsecion")
     public JAXBElement<Inicarsecion> createInicarsecion(Inicarsecion value) {
@@ -726,8 +874,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link InicarsecionResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link InicarsecionResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link InicarsecionResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "inicarsecionResponse")
     public JAXBElement<InicarsecionResponse> createInicarsecionResponse(InicarsecionResponse value) {
@@ -735,8 +887,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Mostrarfecha }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Mostrarfecha }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Mostrarfecha }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "mostrarfecha")
     public JAXBElement<Mostrarfecha> createMostrarfecha(Mostrarfecha value) {
@@ -744,8 +900,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link MostrarfechaResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link MostrarfechaResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link MostrarfechaResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://PROYECTOWS/", name = "mostrarfechaResponse")
     public JAXBElement<MostrarfechaResponse> createMostrarfechaResponse(MostrarfechaResponse value) {

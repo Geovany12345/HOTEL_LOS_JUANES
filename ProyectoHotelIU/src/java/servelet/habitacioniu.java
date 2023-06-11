@@ -12,7 +12,7 @@ import proyectohotel.habitacion;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class habitacioniu {
      private List<habitacion> recursoi = new ArrayList<>();

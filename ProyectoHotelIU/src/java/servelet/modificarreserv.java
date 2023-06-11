@@ -31,7 +31,7 @@ import proyectohotel.reservalista;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 @WebServlet(name = "modificarreserv", urlPatterns = {"/modificarreserv"})
 public class modificarreserv extends HttpServlet {

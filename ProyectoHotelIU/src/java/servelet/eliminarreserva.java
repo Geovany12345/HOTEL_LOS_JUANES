@@ -25,7 +25,7 @@ import proyectohotel.reservalista;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 @WebServlet(name = "eliminarreserva", urlPatterns = {"/eliminarreserva"})
 public class eliminarreserva extends HttpServlet {

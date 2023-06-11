@@ -32,7 +32,7 @@ import proyectohotel.reservalista;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 @WebServlet(name = "ingresarreservafi", urlPatterns = {"/ingresarreservafi"})
 public class ingresarreservafi extends HttpServlet {
