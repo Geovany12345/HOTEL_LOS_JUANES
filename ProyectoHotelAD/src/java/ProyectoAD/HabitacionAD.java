@@ -9,7 +9,7 @@ import proyectohotel.habitacion;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class HabitacionAD extends habitacion{
       public String setSQLInsert() {

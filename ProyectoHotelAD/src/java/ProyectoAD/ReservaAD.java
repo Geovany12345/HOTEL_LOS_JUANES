@@ -9,7 +9,7 @@ import proyectohotel.reserva;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class ReservaAD extends reserva {
     public String setSQLInsert() {

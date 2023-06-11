@@ -7,7 +7,7 @@ package ProyectoAD;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class Global {
     

@@ -17,7 +17,7 @@ import proyectohotel.habitacion;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class HabitacionLN {  
     public String setInserHabitaciones(habitacion hab) {

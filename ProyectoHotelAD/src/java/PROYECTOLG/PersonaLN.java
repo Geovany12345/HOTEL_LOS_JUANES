@@ -20,7 +20,7 @@ import proyectohotel.personas;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class PersonaLN {
     

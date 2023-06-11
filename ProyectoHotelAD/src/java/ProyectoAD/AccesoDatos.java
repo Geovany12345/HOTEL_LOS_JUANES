@@ -7,7 +7,7 @@ package ProyectoAD;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 import java.sql.Connection;
 import java.sql.DriverManager;

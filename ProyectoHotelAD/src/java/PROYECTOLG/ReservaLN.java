@@ -18,7 +18,7 @@ import proyectohotel.reserva;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class ReservaLN {
     public String setInserReserva(reserva res) {

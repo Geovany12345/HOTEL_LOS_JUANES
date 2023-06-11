@@ -9,7 +9,7 @@ import proyectohotel.personas;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 public class PersonaAD  extends personas {
       public String setSQLInsert() {

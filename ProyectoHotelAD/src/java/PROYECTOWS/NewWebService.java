@@ -32,7 +32,7 @@ import proyectohotel.personas;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro
  */
 @WebService(serviceName = "NewWebService")
 public class NewWebService {
