@@ -42,18 +42,16 @@ public class NewWebServiceTest {
      */
     @Test
     public void testIngresarHabitacion() {
-        System.out.println("ingresarHabitacion");
-        String descripcion = "";
-        Double precio = null;
-        Integer piso = null;
-        Integer numerocamas = null;
-        String estado = "";
+        System.out.println("testIngresarHabitacion");
+        String descripcion = "Habitación individual";
+        Double precio = 100.0;
+        Integer piso = 2;
+        Integer numerocamas = 1;
+        String estado = "Disponible";
         NewWebService instance = new NewWebService();
-        String expResult = "";
+        String expResult = "Habitación ingresada correctamente";
         String result = instance.ingresarHabitacion(descripcion, precio, piso, numerocamas, estado);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -61,14 +59,12 @@ public class NewWebServiceTest {
      */
     @Test
     public void testObtenerhabitacion() {
-        System.out.println("obtenerhabitacion");
-        Integer id = null;
+        System.out.println("testObtenerhabitacion");
+        Integer id = 1;
         NewWebService instance = new NewWebService();
-        String expResult = "";
+        String expResult = "Habitación encontrada";
         String result = instance.obtenerhabitacion(id);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -76,13 +72,11 @@ public class NewWebServiceTest {
      */
     @Test
     public void testObtenerhabitaciones() {
-        System.out.println("obtenerhabitaciones");
+        System.out.println("testObtenerhabitaciones");
         NewWebService instance = new NewWebService();
-        String expResult = "";
+        String expResult = "Todas las habitaciones obtenidas";
         String result = instance.obtenerhabitaciones();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -90,13 +84,11 @@ public class NewWebServiceTest {
      */
     @Test
     public void testObtenertodashabitacion() {
-        System.out.println("obtenertodashabitacion");
+        System.out.println("testObtenertodashabitacion");
         NewWebService instance = new NewWebService();
-        String expResult = "";
+        String expResult = "Todas las habitaciones obtenidas";
         String result = instance.obtenertodashabitacion();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -104,13 +96,11 @@ public class NewWebServiceTest {
      */
     @Test
     public void testObtenertodashabitacionocupadas() {
-        System.out.println("obtenertodashabitacionocupadas");
+        System.out.println("testObtenertodashabitacionocupadas");
         NewWebService instance = new NewWebService();
-        String expResult = "";
+        String expResult = "Habitaciones ocupadas obtenidas";
         String result = instance.obtenertodashabitacionocupadas();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -118,19 +108,17 @@ public class NewWebServiceTest {
      */
     @Test
     public void testModificarhabitacion() {
-        System.out.println("modificarhabitacion");
-        Integer id = null;
-        String descripcion = "";
-        Double precio = null;
-        Integer piso = null;
-        Integer numerocamas = null;
-        String estado = "";
+        System.out.println("testModificarhabitacion");
+        Integer id = 1;
+        String descripcion = "Habitación doble";
+        Double precio = 150.0;
+        Integer piso = 3;
+        Integer numerocamas = 2;
+        String estado = "Disponible";
         NewWebService instance = new NewWebService();
-        String expResult = "";
+        String expResult = "Habitación modificada correctamente";
         String result = instance.modificarhabitacion(id, descripcion, precio, piso, numerocamas, estado);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -138,14 +126,12 @@ public class NewWebServiceTest {
      */
     @Test
     public void testEliminarhabitacion() {
-        System.out.println("eliminarhabitacion");
-        Integer id = null;
+        System.out.println("testEliminarhabitacion");
+        Integer id = 1;
         NewWebService instance = new NewWebService();
-        String expResult = "";
+        String expResult = "Habitación eliminada correctamente";
         String result = instance.eliminarhabitacion(id);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
