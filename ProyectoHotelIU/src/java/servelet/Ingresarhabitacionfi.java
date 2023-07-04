@@ -9,6 +9,7 @@ package servelet;
 
 import hotelws1.NewWebService_Service;
 import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,7 +19,7 @@ import javax.xml.ws.WebServiceRef;
 
 /**
  *
- * @author Alejandro
+ * @author Yutokiva
  */
 @WebServlet(name = "Ingresarhabitacionfi", urlPatterns = {"/Ingresarhabitacionfi"})
 public class Ingresarhabitacionfi extends HttpServlet {

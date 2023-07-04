@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceRef;
 
 /**
  *
- * @author Alejandro
+ * @author Yutokiva
  */
 @WebServlet(name = "modificartrabajador", urlPatterns = {"/modificartrabajador"})
 public class modificartrabajador extends HttpServlet {

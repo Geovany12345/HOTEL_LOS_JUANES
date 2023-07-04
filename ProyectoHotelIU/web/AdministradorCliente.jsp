@@ -1,39 +1,17 @@
-<%-- 
-    Document   : AdministradorCliente
-    Created on : 27-nov-2020, 18:12:02
-    Author     : Yutokiva
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    
-<head>
-    <meta charset="utf-8">
-    <title>HOTEL “LOS JUANES”</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
-
-    <!-- Favicon -->
-    <link href="img/l1.jpg" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
+    <head>
+         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOTEL LOS JUANES</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/habitacion.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" crossorigin="anonymous"></script>
+    </head>
     <body bgcolor="#C0C0C0">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -82,7 +60,7 @@
             </center>
         </div>
         
-        <footer>
+          <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-12">
@@ -92,16 +70,13 @@
                         <div class="row">
                             <div class="col-md-4 col-12">
                                 <i class="fas fa-map-marker-alt fa-2x"></i>
-                                <span>Quito, Ecuador </span>
+                                <span>Pedernales, Ecuador </span>
                             </div>
                             <div class="col-md-4 col-12">
                                 <i class="fas fa-phone fa-2x"></i>
-                                <span>022222222</span>
+                                <span>+593993816446</span>
                             </div>
-                            <div class="col-md-4 col-12">
-                                <i class="fas fa-envelope fa-2x"></i>
-                                <span>hotelsancarlos@gmail.com</span>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -109,7 +84,7 @@
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="item">
                             <h4 class="text-capitalize">Información General</h4>
-                            <p>El hotel San Carlos esta ubicado en la ciudad de Quito, este brinda el servio de hospedaje segun la necesidad de cada cliente.</p>
+                            <p>El hotel Los Juanes esta ubicado en la ciudad de Pedernales, este brinda el servio de hospedaje segun la necesidad de cada cliente.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-12">
@@ -152,6 +127,7 @@
                 </ul>
                
             </div>
-        </footer> 
+        </footer>    
+        
     </body>
 </html>

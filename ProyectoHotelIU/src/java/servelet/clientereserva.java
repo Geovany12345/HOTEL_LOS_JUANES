@@ -29,7 +29,7 @@ import proyectohotel.reservalista;
 
 /**
  *
- * @author Alejandro
+ * @author Yutokiva
  */
 @WebServlet(name = "clientereserva", urlPatterns = {"/clientereserva"})
 public class clientereserva extends HttpServlet {

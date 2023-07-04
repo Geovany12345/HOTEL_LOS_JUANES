@@ -3,8 +3,8 @@
   <services/>
   <clients>
     <client name="NewWebService">
-      <wsdl-url>http://localhost:9090/ProyectoHotelAD/NewWebService?wsdl</wsdl-url>
-      <local-wsdl-file>localhost_9090/ProyectoHotelAD/NewWebService.wsdl</local-wsdl-file>
+      <wsdl-url>http://localhost:8080/ProyectoHotelAD/NewWebService?wsdl</wsdl-url>
+      <local-wsdl-file>localhost_8080/ProyectoHotelAD/NewWebService.wsdl</local-wsdl-file>
       <package-name forceReplace="true">hotelws1</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <wsimport-options>

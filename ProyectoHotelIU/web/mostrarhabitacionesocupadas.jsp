@@ -1,8 +1,4 @@
-<%-- 
-    Document   : mostrarhabitacionesocupadas
-    Created on : 06-dic-2020, 18:38:58
-    Author     : Yutokiva
---%>
+
 
 <%@page import="servelet.habitacioniu"%>
 <%@page import="proyectohotel.habitacionlista"%>
@@ -11,30 +7,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <meta charset="utf-8">
-    <title>HOTEL “LOS JUANES”</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
-
-    <!-- Favicon -->
-    <link href="img/l1.jpg" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       
+        <title>HOTEL LOS JUANES</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
     <body bgcolor="#C0C0C0">
             <center>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">

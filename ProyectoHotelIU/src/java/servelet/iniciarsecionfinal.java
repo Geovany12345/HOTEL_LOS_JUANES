@@ -20,7 +20,7 @@ import proyectohotel.personaslista;
 
 /**
  *
- * @author Alejandro
+ * @author Yutokiva
  */
 @WebServlet(name = "iniciarsecionfinal", urlPatterns = {"/iniciarsecionfinal"})
 public class iniciarsecionfinal extends HttpServlet {

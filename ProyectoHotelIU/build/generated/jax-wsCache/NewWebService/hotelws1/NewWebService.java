@@ -41,6 +41,78 @@ public interface NewWebService {
 
     /**
      * 
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod(operationName = "ObtenerHabitaciones")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "ObtenerHabitaciones", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerHabitaciones")
+    @ResponseWrapper(localName = "ObtenerHabitacionesResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerHabitacionesResponse")
+    @Action(input = "http://PROYECTOWS/NewWebService/ObtenerHabitacionesRequest", output = "http://PROYECTOWS/NewWebService/ObtenerHabitacionesResponse")
+    public String obtenerHabitaciones();
+
+    /**
+     * 
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod(operationName = "ObtenerTodasHabitacionescocpuadas")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "ObtenerTodasHabitacionescocpuadas", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerTodasHabitacionescocpuadas")
+    @ResponseWrapper(localName = "ObtenerTodasHabitacionescocpuadasResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerTodasHabitacionescocpuadasResponse")
+    @Action(input = "http://PROYECTOWS/NewWebService/ObtenerTodasHabitacionescocpuadasRequest", output = "http://PROYECTOWS/NewWebService/ObtenerTodasHabitacionescocpuadasResponse")
+    public String obtenerTodasHabitacionescocpuadas();
+
+    /**
+     * 
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod(operationName = "Obtenertotadaspersonastrabajadoras")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "Obtenertotadaspersonastrabajadoras", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Obtenertotadaspersonastrabajadoras")
+    @ResponseWrapper(localName = "ObtenertotadaspersonastrabajadorasResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenertotadaspersonastrabajadorasResponse")
+    @Action(input = "http://PROYECTOWS/NewWebService/ObtenertotadaspersonastrabajadorasRequest", output = "http://PROYECTOWS/NewWebService/ObtenertotadaspersonastrabajadorasResponse")
+    public String obtenertotadaspersonastrabajadoras();
+
+    /**
+     * 
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod(operationName = "ObtenerTodasHabitacion")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "ObtenerTodasHabitacion", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerTodasHabitacion")
+    @ResponseWrapper(localName = "ObtenerTodasHabitacionResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerTodasHabitacionResponse")
+    @Action(input = "http://PROYECTOWS/NewWebService/ObtenerTodasHabitacionRequest", output = "http://PROYECTOWS/NewWebService/ObtenerTodasHabitacionResponse")
+    public String obtenerTodasHabitacion();
+
+    /**
+     * 
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod(operationName = "Obtenertotadaspersonas")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "Obtenertotadaspersonas", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Obtenertotadaspersonas")
+    @ResponseWrapper(localName = "ObtenertotadaspersonasResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenertotadaspersonasResponse")
+    @Action(input = "http://PROYECTOWS/NewWebService/ObtenertotadaspersonasRequest", output = "http://PROYECTOWS/NewWebService/ObtenertotadaspersonasResponse")
+    public String obtenertotadaspersonas();
+
+    /**
+     * 
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod(operationName = "Obtenertodasreservan")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "Obtenertodasreservan", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Obtenertodasreservan")
+    @ResponseWrapper(localName = "ObtenertodasreservanResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenertodasreservanResponse")
+    @Action(input = "http://PROYECTOWS/NewWebService/ObtenertodasreservanRequest", output = "http://PROYECTOWS/NewWebService/ObtenertodasreservanResponse")
+    public String obtenertodasreservan();
+
+    /**
+     * 
      * @param piso
      * @param precio
      * @param estado
@@ -65,6 +137,21 @@ public interface NewWebService {
         Integer numeroCamas,
         @WebParam(name = "estado", targetNamespace = "")
         String estado);
+
+    /**
+     * 
+     * @param id
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod(operationName = "EliminarHabitacion")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "EliminarHabitacion", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.EliminarHabitacion")
+    @ResponseWrapper(localName = "EliminarHabitacionResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.EliminarHabitacionResponse")
+    @Action(input = "http://PROYECTOWS/NewWebService/EliminarHabitacionRequest", output = "http://PROYECTOWS/NewWebService/EliminarHabitacionResponse")
+    public String eliminarHabitacion(
+        @WebParam(name = "id", targetNamespace = "")
+        Integer id);
 
     /**
      * 
@@ -98,105 +185,99 @@ public interface NewWebService {
 
     /**
      * 
+     * @param name
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod(operationName = "Obtenerreservan")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "Obtenerreservan", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Obtenerreservan")
+    @ResponseWrapper(localName = "ObtenerreservanResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerreservanResponse")
+    @Action(input = "http://PROYECTOWS/NewWebService/ObtenerreservanRequest", output = "http://PROYECTOWS/NewWebService/ObtenerreservanResponse")
+    public String obtenerreservan(
+        @WebParam(name = "name", targetNamespace = "")
+        Integer name);
+
+    /**
+     * 
      * @param id
      * @return
      *     returns java.lang.String
      */
-    @WebMethod(operationName = "EliminarHabitacion")
+    @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "EliminarHabitacion", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.EliminarHabitacion")
-    @ResponseWrapper(localName = "EliminarHabitacionResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.EliminarHabitacionResponse")
-    @Action(input = "http://PROYECTOWS/NewWebService/EliminarHabitacionRequest", output = "http://PROYECTOWS/NewWebService/EliminarHabitacionResponse")
-    public String eliminarHabitacion(
+    @RequestWrapper(localName = "mostrarfecha", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Mostrarfecha")
+    @ResponseWrapper(localName = "mostrarfechaResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.MostrarfechaResponse")
+    @Action(input = "http://PROYECTOWS/NewWebService/mostrarfechaRequest", output = "http://PROYECTOWS/NewWebService/mostrarfechaResponse")
+    public String mostrarfecha(
         @WebParam(name = "id", targetNamespace = "")
         Integer id);
 
     /**
      * 
+     * @param name
      * @return
      *     returns java.lang.String
      */
-    @WebMethod(operationName = "Obtenertotadaspersonastrabajadoras")
+    @WebMethod(operationName = "Obtenerpersonas")
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "Obtenertotadaspersonastrabajadoras", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Obtenertotadaspersonastrabajadoras")
-    @ResponseWrapper(localName = "ObtenertotadaspersonastrabajadorasResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenertotadaspersonastrabajadorasResponse")
-    @Action(input = "http://PROYECTOWS/NewWebService/ObtenertotadaspersonastrabajadorasRequest", output = "http://PROYECTOWS/NewWebService/ObtenertotadaspersonastrabajadorasResponse")
-    public String obtenertotadaspersonastrabajadoras();
+    @RequestWrapper(localName = "Obtenerpersonas", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Obtenerpersonas")
+    @ResponseWrapper(localName = "ObtenerpersonasResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerpersonasResponse")
+    @Action(input = "http://PROYECTOWS/NewWebService/ObtenerpersonasRequest", output = "http://PROYECTOWS/NewWebService/ObtenerpersonasResponse")
+    public String obtenerpersonas(
+        @WebParam(name = "name", targetNamespace = "")
+        String name);
 
     /**
      * 
+     * @param fecha
+     * @param idhabitacion
+     * @param costo
+     * @param fechaa
+     * @param fechac
+     * @param id
+     * @param cantidad
      * @return
      *     returns java.lang.String
      */
-    @WebMethod(operationName = "Obtenertotadaspersonas")
+    @WebMethod(operationName = "IngresarReserva")
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "Obtenertotadaspersonas", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Obtenertotadaspersonas")
-    @ResponseWrapper(localName = "ObtenertotadaspersonasResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenertotadaspersonasResponse")
-    @Action(input = "http://PROYECTOWS/NewWebService/ObtenertotadaspersonasRequest", output = "http://PROYECTOWS/NewWebService/ObtenertotadaspersonasResponse")
-    public String obtenertotadaspersonas();
+    @RequestWrapper(localName = "IngresarReserva", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.IngresarReserva")
+    @ResponseWrapper(localName = "IngresarReservaResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.IngresarReservaResponse")
+    @Action(input = "http://PROYECTOWS/NewWebService/IngresarReservaRequest", output = "http://PROYECTOWS/NewWebService/IngresarReservaResponse")
+    public String ingresarReserva(
+        @WebParam(name = "id", targetNamespace = "")
+        String id,
+        @WebParam(name = "Idhabitacion", targetNamespace = "")
+        Integer idhabitacion,
+        @WebParam(name = "fechac", targetNamespace = "")
+        String fechac,
+        @WebParam(name = "fecha", targetNamespace = "")
+        String fecha,
+        @WebParam(name = "fechaa", targetNamespace = "")
+        String fechaa,
+        @WebParam(name = "cantidad", targetNamespace = "")
+        Long cantidad,
+        @WebParam(name = "costo", targetNamespace = "")
+        Double costo);
 
     /**
      * 
+     * @param name
+     * @param uaurio
      * @return
      *     returns java.lang.String
      */
-    @WebMethod(operationName = "ObtenerHabitaciones")
+    @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "ObtenerHabitaciones", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerHabitaciones")
-    @ResponseWrapper(localName = "ObtenerHabitacionesResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerHabitacionesResponse")
-    @Action(input = "http://PROYECTOWS/NewWebService/ObtenerHabitacionesRequest", output = "http://PROYECTOWS/NewWebService/ObtenerHabitacionesResponse")
-    public String obtenerHabitaciones();
-
-    /**
-     * 
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod(operationName = "ObtenerTodasHabitacionescocpuadas")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "ObtenerTodasHabitacionescocpuadas", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerTodasHabitacionescocpuadas")
-    @ResponseWrapper(localName = "ObtenerTodasHabitacionescocpuadasResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerTodasHabitacionescocpuadasResponse")
-    @Action(input = "http://PROYECTOWS/NewWebService/ObtenerTodasHabitacionescocpuadasRequest", output = "http://PROYECTOWS/NewWebService/ObtenerTodasHabitacionescocpuadasResponse")
-    public String obtenerTodasHabitacionescocpuadas();
-
-    /**
-     * 
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod(operationName = "ObtenerTodasHabitacion")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "ObtenerTodasHabitacion", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerTodasHabitacion")
-    @ResponseWrapper(localName = "ObtenerTodasHabitacionResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerTodasHabitacionResponse")
-    @Action(input = "http://PROYECTOWS/NewWebService/ObtenerTodasHabitacionRequest", output = "http://PROYECTOWS/NewWebService/ObtenerTodasHabitacionResponse")
-    public String obtenerTodasHabitacion();
-
-    /**
-     * 
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod(operationName = "Obtenertodasreservan")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "Obtenertodasreservan", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Obtenertodasreservan")
-    @ResponseWrapper(localName = "ObtenertodasreservanResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenertodasreservanResponse")
-    @Action(input = "http://PROYECTOWS/NewWebService/ObtenertodasreservanRequest", output = "http://PROYECTOWS/NewWebService/ObtenertodasreservanResponse")
-    public String obtenertodasreservan();
-
-    /**
-     * 
-     * @param data
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod(operationName = "Eliminarpersonas")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "Eliminarpersonas", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Eliminarpersonas")
-    @ResponseWrapper(localName = "EliminarpersonasResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.EliminarpersonasResponse")
-    @Action(input = "http://PROYECTOWS/NewWebService/EliminarpersonasRequest", output = "http://PROYECTOWS/NewWebService/EliminarpersonasResponse")
-    public String eliminarpersonas(
-        @WebParam(name = "data", targetNamespace = "")
-        String data);
+    @RequestWrapper(localName = "inicarsecion", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Inicarsecion")
+    @ResponseWrapper(localName = "inicarsecionResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.InicarsecionResponse")
+    @Action(input = "http://PROYECTOWS/NewWebService/inicarsecionRequest", output = "http://PROYECTOWS/NewWebService/inicarsecionResponse")
+    public String inicarsecion(
+        @WebParam(name = "uaurio", targetNamespace = "")
+        String uaurio,
+        @WebParam(name = "name", targetNamespace = "")
+        String name);
 
     /**
      * 
@@ -285,102 +366,6 @@ public interface NewWebService {
     /**
      * 
      * @param id
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "mostrarfecha", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Mostrarfecha")
-    @ResponseWrapper(localName = "mostrarfechaResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.MostrarfechaResponse")
-    @Action(input = "http://PROYECTOWS/NewWebService/mostrarfechaRequest", output = "http://PROYECTOWS/NewWebService/mostrarfechaResponse")
-    public String mostrarfecha(
-        @WebParam(name = "id", targetNamespace = "")
-        Integer id);
-
-    /**
-     * 
-     * @param name
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod(operationName = "Obtenerpersonas")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "Obtenerpersonas", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Obtenerpersonas")
-    @ResponseWrapper(localName = "ObtenerpersonasResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerpersonasResponse")
-    @Action(input = "http://PROYECTOWS/NewWebService/ObtenerpersonasRequest", output = "http://PROYECTOWS/NewWebService/ObtenerpersonasResponse")
-    public String obtenerpersonas(
-        @WebParam(name = "name", targetNamespace = "")
-        String name);
-
-    /**
-     * 
-     * @param name
-     * @param uaurio
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "inicarsecion", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Inicarsecion")
-    @ResponseWrapper(localName = "inicarsecionResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.InicarsecionResponse")
-    @Action(input = "http://PROYECTOWS/NewWebService/inicarsecionRequest", output = "http://PROYECTOWS/NewWebService/inicarsecionResponse")
-    public String inicarsecion(
-        @WebParam(name = "uaurio", targetNamespace = "")
-        String uaurio,
-        @WebParam(name = "name", targetNamespace = "")
-        String name);
-
-    /**
-     * 
-     * @param fecha
-     * @param idhabitacion
-     * @param costo
-     * @param fechaa
-     * @param fechac
-     * @param id
-     * @param cantidad
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod(operationName = "IngresarReserva")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "IngresarReserva", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.IngresarReserva")
-    @ResponseWrapper(localName = "IngresarReservaResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.IngresarReservaResponse")
-    @Action(input = "http://PROYECTOWS/NewWebService/IngresarReservaRequest", output = "http://PROYECTOWS/NewWebService/IngresarReservaResponse")
-    public String ingresarReserva(
-        @WebParam(name = "id", targetNamespace = "")
-        String id,
-        @WebParam(name = "Idhabitacion", targetNamespace = "")
-        Integer idhabitacion,
-        @WebParam(name = "fechac", targetNamespace = "")
-        String fechac,
-        @WebParam(name = "fecha", targetNamespace = "")
-        String fecha,
-        @WebParam(name = "fechaa", targetNamespace = "")
-        String fechaa,
-        @WebParam(name = "cantidad", targetNamespace = "")
-        Long cantidad,
-        @WebParam(name = "costo", targetNamespace = "")
-        Double costo);
-
-    /**
-     * 
-     * @param name
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod(operationName = "Obtenerreservan")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "Obtenerreservan", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Obtenerreservan")
-    @ResponseWrapper(localName = "ObtenerreservanResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.ObtenerreservanResponse")
-    @Action(input = "http://PROYECTOWS/NewWebService/ObtenerreservanRequest", output = "http://PROYECTOWS/NewWebService/ObtenerreservanResponse")
-    public String obtenerreservan(
-        @WebParam(name = "name", targetNamespace = "")
-        Integer name);
-
-    /**
-     * 
-     * @param id
      * @param ide
      * @return
      *     returns java.lang.String
@@ -431,5 +416,20 @@ public interface NewWebService {
         Double costo,
         @WebParam(name = "idantiguo", targetNamespace = "")
         Integer idantiguo);
+
+    /**
+     * 
+     * @param data
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod(operationName = "Eliminarpersonas")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "Eliminarpersonas", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.Eliminarpersonas")
+    @ResponseWrapper(localName = "EliminarpersonasResponse", targetNamespace = "http://PROYECTOWS/", className = "hotelws1.EliminarpersonasResponse")
+    @Action(input = "http://PROYECTOWS/NewWebService/EliminarpersonasRequest", output = "http://PROYECTOWS/NewWebService/EliminarpersonasResponse")
+    public String eliminarpersonas(
+        @WebParam(name = "data", targetNamespace = "")
+        String data);
 
 }
