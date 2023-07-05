@@ -34,7 +34,7 @@ import proyectohotel.reservalista;
 @WebServlet(name = "clientereserva", urlPatterns = {"/clientereserva"})
 public class clientereserva extends HttpServlet {
 
-    @WebServiceRef(wsdlLocation = "WEB-INF/wsdl/localhost_8080/ProyectoHotelAD/NewWebService.wsdl")
+    @WebServiceRef(wsdlLocation = "WEB-INF/wsdl/localhost_9090/ProyectoHotelAD/NewWebService.wsdl")
     private NewWebService_Service service;
     public List<habitacion> habit = new ArrayList<>();
 

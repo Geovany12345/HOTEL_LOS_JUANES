@@ -25,7 +25,7 @@ import proyectohotel.personaslista;
 @WebServlet(name = "NewServlet", urlPatterns = {"/NewServlet"})
 public class NewServlet extends HttpServlet {
 
-    @WebServiceRef(wsdlLocation = "WEB-INF/wsdl/localhost_8080/ProyectoHotelAD/NewWebService.wsdl")
+    @WebServiceRef(wsdlLocation = "WEB-INF/wsdl/localhost_9090/ProyectoHotelAD/NewWebService.wsdl")
     private NewWebService_Service service;
 
     /**

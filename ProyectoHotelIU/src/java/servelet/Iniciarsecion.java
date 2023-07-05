@@ -32,7 +32,7 @@ public class Iniciarsecion extends HttpServlet {
  
 
 
-    @WebServiceRef(wsdlLocation = "WEB-INF/wsdl/localhost_8080/ProyectoHotelAD/NewWebService.wsdl")
+    @WebServiceRef(wsdlLocation = "WEB-INF/wsdl/localhost_9090/ProyectoHotelAD/NewWebService.wsdl")
     private NewWebService_Service service;
 
     /**

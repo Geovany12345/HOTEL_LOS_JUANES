@@ -22,7 +22,7 @@ import javax.xml.ws.WebServiceRef;
 @WebServlet(name = "eliminarhabitacion", urlPatterns = {"/eliminarhabitacion"})
 public class eliminarhabitacion extends HttpServlet {
 
-    @WebServiceRef(wsdlLocation = "WEB-INF/wsdl/localhost_8080/ProyectoHotelAD/NewWebService.wsdl")
+    @WebServiceRef(wsdlLocation = "WEB-INF/wsdl/localhost_9090/ProyectoHotelAD/NewWebService.wsdl")
     private NewWebService_Service service;
 
     /**
