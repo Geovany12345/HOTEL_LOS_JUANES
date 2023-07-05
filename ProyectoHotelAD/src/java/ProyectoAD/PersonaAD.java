@@ -14,7 +14,7 @@ import proyectohotel.personas;
 public class PersonaAD  extends personas {
       public String setSQLInsert() {
         String result = "Error Sentencia AD";
-        result = "INSERT INTO persona(\n"
+        result = "INSERT INTO personas(\n"
                 + "identificacion,nombres,apellidos, telefono, email, estadop, direccion, usuario,contrasenia,provolegio)\n"
                 + "VALUES ('" + this.getIdentificacion() + "','" + this.getNombres()+ "', '" + this.getApellidos() + "', '" + this.getTelefono()+ "','" + this.getEmail()+ "','" + this.getEstadop() + "','" + this.getDireccion()+ "','" + this.getUsuario() + "','" + this.getContrasenia()+ "','" + this.getProvolegio()+ "');";
         return result;
@@ -25,7 +25,7 @@ public class PersonaAD  extends personas {
          
          String result;
 
-             result = "SELECT * FROM persona WHERE( (usuario = '" + this.getUsuario()+ "') and (contrasenia='"+this.getContrasenia()+"'))" ; 
+             result = "SELECT * FROM personas WHERE( (usuario = '" + this.getUsuario()+ "') and (contrasenia='"+this.getContrasenia()+"'))" ; 
   
 
          return result;
@@ -34,7 +34,7 @@ public class PersonaAD  extends personas {
          String result = "";
 
          if ( getIdentificacion()!= null) {
-             result = "SELECT * FROM persona WHERE( (identificacion = '" + this.getIdentificacion()+ "') and (estadop= 'Activo'))" ; 
+             result = "SELECT * FROM personas WHERE( (identificacion = '" + this.getIdentificacion()+ "') and (estadop= 'Activo'))" ; 
          }
 
          return result;
@@ -44,7 +44,7 @@ public class PersonaAD  extends personas {
          String result = "";
 
          
-             result = "SELECT * FROM persona WHERE( (estadop= 'Activo') and (provolegio='Cliente'))" ; 
+             result = "SELECT * FROM personas WHERE( (estadop= 'Activo') and (provolegio='Cliente'))" ; 
   
 
          return result;
@@ -53,7 +53,7 @@ public class PersonaAD  extends personas {
          String result = "";
 
          
-             result = "SELECT * FROM persona WHERE( (estadop= 'Activo') and (provolegio='Empleado'))" ; 
+             result = "SELECT * FROM personas WHERE( (estadop= 'Activo') and (provolegio='Empleado'))" ; 
   
 
          return result;
@@ -61,7 +61,7 @@ public class PersonaAD  extends personas {
      public String setSQLUpdate() {
 
         String result = "Error Sentencia AD";
-        result = "  UPDATE persona\n"
+        result = "  UPDATE personas\n"
                 + "   SET identificacion='"+this.getIdentificacion()+"',nombres='"+this.getNombres()+"',apellidos='"+this.getApellidos()+"',telefono='"+this.getTelefono()+"',email='"+this.getEmail()+"',usuario='"+this.getUsuario()+"',contrasenia='"+this.getContrasenia()+"',direccion='"+this.getDireccion()+"',provolegio='"+this.getProvolegio()+"' \n"
                 + "   where identificacion='" + this.getIdentificacion() + "' ;";
         return result;
@@ -70,7 +70,7 @@ public class PersonaAD  extends personas {
       public String setSQLdelete() {
 
         String result = "Error Sentencia AD";
-        result = "  UPDATE persona\n"
+        result = "  UPDATE personas\n"
                 + "   SET estadop='"+this.getEstadop()+"' \n"
                 + "   where identificacion='" + this.getIdentificacion() + "' ;";
         return result;

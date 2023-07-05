@@ -233,6 +233,7 @@ public class NewWebService {
            
             String resul;
             resul = oPersonaLN.setInserPersonas(opersona);
+            resulJSON = resul;
            
         } catch (JsonSyntaxException ex) {
             Logger.getLogger(NewWebService.class.getName()).log(Level.SEVERE, null, ex);
