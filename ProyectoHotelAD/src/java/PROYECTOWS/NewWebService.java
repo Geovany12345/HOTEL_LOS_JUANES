@@ -376,9 +376,9 @@ public class NewWebService {
             String resul;
             resul = oPersonaLN.setDeletePersonas(data);
             if ("Exito".equals(resul)) {
-                resulJSON = gson.toJson("Operacines exitosas!!");
+                resulJSON = gson.toJson("Exito");
             } else {
-                resulJSON = gson.toJson("Datos no eliminados");
+                resulJSON = gson.toJson("Error");
             }
         } catch (JsonSyntaxException ex) {
             Logger.getLogger(NewWebService.class.getName()).log(Level.SEVERE, null, ex);
@@ -510,8 +510,6 @@ public class NewWebService {
          String resulJSON = "";
         try {
             Gson gson = new Gson();
-
-           
             ReservaLN oHabitacionLN = new ReservaLN();
             HabitacionLN hab =new HabitacionLN();
             hab.setUpdateHabitacion(ide);
