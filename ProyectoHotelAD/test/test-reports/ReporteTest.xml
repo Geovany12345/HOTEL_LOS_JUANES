@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Hotel Los Juanes Test Suite">
+    <testcase name="testIngresarHabitacion">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testObtenerhabitacion">
+      <result>fail</result>
+      <message>Expected JSON: {"habitaciones":[]}, but got: {"habitaciones":[{"id_habitacion":1,"descripcion":"Habitación individual","precio":100.0,"piso":2,"numero_camas":1,"estadoh":"Disponible"}]}</message>
+    </testcase>
+    <testcase name="testObtenertodashabitacion">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testObtenertodashabitacionocupadas">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testModificarhabitacion">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testEliminarhabitacion">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testIngresarpersona">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testObtenerpersona">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testInicarsesion">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testObtenertotsaspersonatrabajadoras">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testObtenertotsaspersona">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testModificarpersona">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testEliminarpersonas">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testIngresarreserva">
+      <result>disabled</result>
+      <message>This test is currently disabled.</message>
+    </testcase>
+    <testcase name="testObtenerreserva">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testObtenertodasreserva">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testModificarreserva">
+      <result>disabled</result>
+      <message>This test is currently disabled.</message>
+    </testcase>
+    <testcase name="testEliminarreserva">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+    <testcase name="testMostrarfecha">
+      <result>pass</result>
+      <message>Test passed successfully.</message>
+    </testcase>
+  </testsuite>
+</testsuites>
+
