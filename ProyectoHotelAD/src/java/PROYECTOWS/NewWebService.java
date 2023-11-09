@@ -346,7 +346,7 @@ public class NewWebService {
             opersona.setEmail(email);
             opersona.setEstadop(estado);
             opersona.setProvolegio(privilegio);
-            PersonaLN oPersonaLN = new PersonaLN();
+            
             PersonaLN opersonaLN = new PersonaLN();
 
             String resul;

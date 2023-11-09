@@ -62,8 +62,8 @@ public class PersonaAD  extends personas {
 
         String result = "Error Sentencia AD";
         result = "  UPDATE personas\n"
-                + "   SET identificacion='"+this.getIdentificacion()+"',nombres='"+this.getNombres()+"',apellidos='"+this.getApellidos()+"',telefono='"+this.getTelefono()+"',email='"+this.getEmail()+"',usuario='"+this.getUsuario()+"',contrasenia='"+this.getContrasenia()+"',direccion='"+this.getDireccion()+"',provolegio='"+this.getProvolegio()+"' \n"
-                + "   where identificacion='" + this.getIdentificacion() + "' ;";
+                + "   SET nombres='"+this.getNombres()+"',apellidos='"+this.getApellidos()+"',telefono='"+this.getTelefono()+"',email='"+this.getEmail()+"',usuario='"+this.getUsuario()+"',contrasenia='"+this.getContrasenia()+"',direccion='"+this.getDireccion()+"',provolegio='"+this.getProvolegio()+"' \n"
+                + "   where identificacion=='" + this.getIdentificacion() + "' ;";
         return result;
 
     }
