@@ -38,7 +38,7 @@ public class Reservaiu {
          
          
            Iterator it = recursoi.iterator();
-        Integer hid_hoja = recursoi.get(0).getHid_hoja();
+      
         String result = "";
         //Boton Agregar
         result += "<h3>Reservas</h3>"
@@ -60,43 +60,38 @@ public class Reservaiu {
           while (it.hasNext()) {
 
             reserva oRecurso1 = (reserva) it.next();
-             result += "<div class='cursoi' data-detalle='CursoInter' data-id='" + oRecurso1.getId_reserva()+ "' data-tipo='' data-estado=''>"
-                    + "<div class='input-group'>"
-                    + "<span class='input-group-addon'>Título</span>"
-                    + "<input type='text' class='form-control CursoInter nombre' id='" + oRecurso1.getId_reserva() + "' placeholder='Descripci&oacute;n del curso' data-universidad='" + oRecurso1.getCi_institucion() + "' data-anio='" + oRecurso1.getCianio() + "' data-hoja='" + oRecurso1.getHid_hoja() + "' data-pais='" + oRecurso1.getCi_pais() + "' value='" + oRecurso1.getCi_nombre() + "'>";
-            result += "<span class='input-group-addon' id='deshabilitar' data-toggle='tooltip' data-placement='bottom' title='Eliminar'>"
-                    + "<i class='fa fa-minus-circle' title='eliminar'> </i>"
-                    + "</span>";//Boton eliminar
-            result += "<span class='input-group-addon' id='modificarIn' data-toggle='tooltip' data-placement='bottom' title='modificar' onclick='ModificarCursosInternacionales(" + oRecurso1.getCid_ce2() + ")'>"
-                    + "<i class='fa fa-ellipsis-h' title='Modificar'></i>"
-                    + "</span>";//Boton Modificar
-            result += "</div>"
-                    + "</div>";
-        }
+        //     result += "<div class='cursoi' data-detalle='CursoInter' data-id='" + oRecurso1.getId_reserva()+ "' data-tipo='' data-estado=''>"
+                  //  + "<div class='input-group'>"
+                //    + "<span class='input-group-addon'>Título</span>"
+             //       + "<input type='text' class='form-control CursoInter nombre' id='" + oRecurso1.getId_reserva() + "' placeholder='Descripci&oacute;n del curso' data-universidad='" + oRecurso1.getCi_institucion() + "' data-anio='" + oRecurso1.getCianio() + "' data-hoja='" + oRecurso1.getHid_hoja() + "' data-pais='" + oRecurso1.getCi_pais() + "' value='" + oRecurso1.getCi_nombre() + "'>";
+          //  result += "<span class='input-group-addon' id='deshabilitar' data-toggle='tooltip' data-placement='bottom' title='Eliminar'>"
+            //        + "<i class='fa fa-minus-circle' title='eliminar'> </i>"
+            //        + "</span>";//Boton eliminar
+          //  result += "<span class='input-group-addon' id='modificarIn' data-toggle='tooltip' data-placement='bottom' title='modificar' onclick='ModificarCursosInternacionales(" + oRecurso1.getCid_ce2() + ")'>"
+            //        + "<i class='fa fa-ellipsis-h' title='Modificar'></i>"
+             //       + "</span>";//Boton Modificar
+          //  result += "</div>"
+            //        + "</div>";
+       // }
             
-            result += "</div>"
-                + "</div>"
-                + "</div>"
-                + "</form>"
-                + "<!-- barra de botones -->"
-                + "<div class='form-group row'>"
-                + "<div class='col-xs-9'>"
-                + "</div>"
-                + "<div class='col-xs-3'>"
-                + "<button type='button' id='btnGuardarCurIn' class='btn btn-secondary float-xs-right gRecursos' data-toggle='tooltip' data-placement='top' title='Guardar cambios'>"
-                + "Guardar | <i class='fa fa-fw'></i>"
-                + "</button>"
-                + "</div>"
-                + "</div>";
+         //0   result += "</div>"
+            //    + "</div>"
+            //    + "</div>"
+             //   + "</form>"
+            //    + "<!-- barra de botones -->"
+              //  + "<div class='form-group row'>"
+             //   + "<div class='col-xs-9'>"
+             //   + "</div>"
+             //   + "<div class='col-xs-3'>"
+              //  + "<button type='button' id='btnGuardarCurIn' class='btn btn-secondary float-xs-right gRecursos' data-toggle='tooltip' data-placement='top' title='Guardar cambios'>"
+             //   + "Guardar | <i class='fa fa-fw'></i>"
+             //   + "</button>"
+              //  + "</div>"
+              //  + "</div>";
              
          
           
-          
+          }
      return result;
          }
-     public String toHTML3() {
-        String result = "";
-        result += "<h5 align='center'>" + getHid_hoja() + "</h5><br>";
-        return result;
-    }
-}
+     }

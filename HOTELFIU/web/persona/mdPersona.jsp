@@ -1,10 +1,3 @@
-<%-- 
-    Document   : mdCursosIntern
-    Created on : 04-jun-2017, 22:08:09
-    Author     : Sandra
---%>
-
-
 
 <%@page import="com.google.gson.Gson"%>
 <%@page import="java.util.Iterator"%>

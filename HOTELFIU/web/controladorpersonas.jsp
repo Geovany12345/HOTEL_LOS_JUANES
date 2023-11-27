@@ -1,8 +1,4 @@
-<%-- 
-    Document   : controladorcursosinternacionales
-    Created on : 04-jun-2017, 19:50:24
-    Author     : Sandra
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -16,7 +12,7 @@
          <%
             String strOpc = request.getParameter("opc");
             if (strOpc != null) {
-                if (strOpc.equals("curintreporte")) {
+                if (strOpc.equals("personareporte")) {
                     String strTsk = request.getParameter("tsk");
 
                     String tipo = request.getParameter("tipo");
@@ -25,25 +21,25 @@
                   
                     if (strTsk.equals("mostrarRecursoIReporte")) {
                         String strJSONData = "{\"hid_hoja\":\"" + hid_hoja + "\"}";
-                        response.sendRedirect("cursosIntern/mdCursoInternReporte.jsp?acc=getCursoInterReporte&data="+ strJSONData);
-                    } else if (strTsk.equals("mostrarCursosInterReporte")) {
-                        response.sendRedirect("cursosIntern/vwCursoInternReporte.jsp");
+                        response.sendRedirect("persona/mdPersonaReporte.jsp?acc=getPersonaReporte&data="+ strJSONData);
+                    } else if (strTsk.equals("mostrarPersonaReporte")) {
+                        response.sendRedirect("persona/vwPersonaReporte.jsp");
                     } 
                 }
-                if (strOpc.equals("ingresari")) {
-                     String Cinter = request.getParameter("jsonGCursoInter");
-                    response.sendRedirect("cursosIntern/mdCursosIntern.jsp?acc=agregarCursosInter&data=" + Cinter);
+                if (strOpc.equals("ingresarpersona")) {
+                     String Cinter = request.getParameter("jsonPersona");
+                    response.sendRedirect("persona/mdPersona.jsp?acc=agregarPersona&data=" + Cinter);
                    
                 } 
                     else if(strOpc.equals("ingreCursoInter")){
-                     String CursoI = request.getParameter("jsonGCursoInternac");
+                     String CursoI = request.getParameter("jsonPersona");
                
-                    response.sendRedirect("cursosIntern/mdCursosIntern.jsp?acc=setCursoI&data=" + CursoI);
+                    response.sendRedirect("persona/mdPersona.jsp?acc=setPersona&data=" + CursoI);
                     
                 }
                     String strTsk = request.getParameter("tsk");
                     if (strTsk.equals("mostrarCursoI")) {
-                        response.sendRedirect("cursosIntern/vwCursoIntern.jsp");
+                        response.sendRedirect("persona/vwPersona.jsp");
                     }
                 }
             else {
