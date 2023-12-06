@@ -7,7 +7,7 @@ package hotelcomun;
 
 /**
  *
- * @author ALEJANDRO M
+ * @author ALEJANDRO MEDRANDA
  */
 public class habitacion {
     Integer id_habitacion;
