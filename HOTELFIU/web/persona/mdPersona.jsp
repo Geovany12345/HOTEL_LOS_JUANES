@@ -1,8 +1,15 @@
+<%-- 
+    Document   : mdCursosIntern
+    Created on : 04-jun-2017, 22:08:09
+    Author     : Sandra
+--%>
 
-<%@page import="com.google.gson.Gson"%>
+
+<%@page import="ipec.postulaciondocentes.comun.cFormacionAcademica"%>
 <%@page import="java.util.Iterator"%>
-<%@page import="hotelcomun.personas"%>
-<%@page import="hotelcomun.personaslista"%>
+<%@page import="ipec.postulaciondocentes.comun.cCursoInternacionales"%>
+<%@page import="ipec.postulaciondocentes.comun.cListaCursosInternacionales"%>
+<%@page import="com.google.gson.Gson"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -20,56 +27,53 @@
                 if (strAcc.equals("setCursoI")) {
                     
                     Gson gson = new Gson();
-                    personaslista soLPers = gson.fromJson(strData,personaslista.class);
-                    Iterator itc = soLPers.getPersona().iterator();
+                    cListaCursosInternacionales oListaCursos = gson.fromJson(strData,cListaCursosInternacionales.class);
+                    Iterator itc = oListaCursos.getCursosInter().iterator();
                     String mensaje="";
                     while (itc.hasNext()) {
-                        personas oper = (personas) itc.next();
-                         String strGuardarCI = gson.toJson(oper, personas.class);
-                         hotelaaws.Proyectowser_Service service = new hotelaaws.Proyectowser_Service();
-                           hotelaaws.Proyectowser port = service.getProyectowserPort();
+                        cCursoInternacionales oCursoI = (cCursoInternacionales) itc.next();
+                         String strGuardarCI = gson.toJson(oCursoI, cCursoInternacionales.class);
+                         ipec.postulacion.ws.IpecPostulacionWS_Service service = new ipec.postulacion.ws.IpecPostulacionWS_Service();
+                         ipec.postulacion.ws.IpecPostulacionWS port = service.getIpecPostulacionWSPort();
                         // String data1 = gson.toJson(oCursoI, cCursoInternacionales.class);
-                        if (oper.getIdentificacion()== " ") {
+                        if (oCursoI.getCid_ce2() < 0) {
                             
-                            java.lang.String result = port.ingresarPersonas(strGuardarCI);
+                            java.lang.String result = port.ingresarCursoInternacionales(strGuardarCI);
                             mensaje = gson.fromJson(result, String.class);
                         } else {
                                                         //modificar
-                            java.lang.String result = port.modificarpersonas(strGuardarCI);
+                            java.lang.String result = port.modificarCursosInternacionales(strGuardarCI);
                             mensaje = gson.fromJson(result, String.class);
                         }
                     }
                    session.setAttribute("recurso", mensaje);
-                   response.sendRedirect("../controladorpersonas.jsp?opc=CursoI&tsk=mostrarCursoI");
+                   response.sendRedirect("../controladorcursosinternacionales.jsp?opc=CursoI&tsk=mostrarCursoI");
     
-                }  else if (strAcc.equals("agregarpersonas")) {
-                    personaslista oListaCursoI = (personaslista) session.getAttribute("personasReporte");//dato obtenido desde el mdForAcaReporte, seccion
+                }  else if (strAcc.equals("agregarCursosInter")) {
+                    cListaCursosInternacionales oListaCursoI = (cListaCursosInternacionales) session.getAttribute("CursosInterReporte");//dato obtenido desde el mdForAcaReporte, seccion
                     Gson gson = new Gson();
-                    personas ocursointer = gson.fromJson(strData, personas.class);
-                   if (ocursointer.getIdentificacion() != " ") {//modifica 
+                    cCursoInternacionales ocursointer = gson.fromJson(strData, cCursoInternacionales.class);
+                   if (ocursointer.getCid_ce2() > 0) {//modifica 
                        int i = 0;
-                       String cid_codigo=ocursointer.getIdentificacion();
-                   for (personas oCursoInternacionales : oListaCursoI.getPersona()) {
-                       String codigo=oCursoInternacionales.getIdentificacion(); 
-                       
-                       if (codigo ==cid_codigo) {
+                       Integer cid_codigo=ocursointer.getCid_ce2();
+                   for (cCursoInternacionales oCursoInternacionales : oListaCursoI.getCursosInter()) {
+                       Integer codigo=oCursoInternacionales.getCid_ce2(); 
+                     if (codigo ==cid_codigo) {
                      
-                                oListaCursoI.getPersona().set(i, ocursointer);
+                                oListaCursoI.getCursosInter().set(i, ocursointer);
                            }
                       
                             i++; 
                    }
                  }else  {// agregar
-                    oListaCursoI.setObjCN(ocursointer);
+                    oListaCursoI.setObj(ocursointer);
                    }
                     session.setAttribute("CursosInterReporte", oListaCursoI);
-                    response.sendRedirect("../controladorpersonas.jsp?opc=personareporte&tsk=mostrarPersonaReporte");//madar tsk al com¡ntrolador
+                    response.sendRedirect("../controladorcursosinternacionales.jsp?opc=curintreporte&tsk=mostrarCursosInterReporte");//madar tsk al com¡ntrolador
                 }
             } catch (Exception ex) {
                 // TODO handle custom exceptions here
             }
         %>
     </body>
-   
-    
 </html>

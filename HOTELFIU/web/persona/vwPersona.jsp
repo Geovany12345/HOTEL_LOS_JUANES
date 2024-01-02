@@ -1,4 +1,8 @@
-
+<%-- 
+    Document   : vwCursoIntern
+    Created on : 04-jun-2017, 22:21:48
+    Author     : Sandra
+--%>
 
 <%
    String resultJSON = "{}";

@@ -5,10 +5,10 @@
  */
 package servelet;
 
-import hotelcomun.personas;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import proyectohotel.personas;
 
 /**
  *

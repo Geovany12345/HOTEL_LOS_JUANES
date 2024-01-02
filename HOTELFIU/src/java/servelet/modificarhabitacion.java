@@ -5,7 +5,6 @@
  */
 package servelet;
 
-import com.google.gson.Gson;
 import hotelws1.NewWebService_Service;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -15,15 +14,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.xml.ws.WebServiceRef;
-import proyectohotel.personas;
-import proyectohotel.personaslista;
 
 /**
  *
  * @author Yutokiva
  */
-@WebServlet(name = "NewServlet", urlPatterns = {"/NewServlet"})
-public class NewServlet extends HttpServlet {
+@WebServlet(name = "modificarhabitacion", urlPatterns = {"/modificarhabitacion"})
+public class modificarhabitacion extends HttpServlet {
 
     @WebServiceRef(wsdlLocation = "WEB-INF/wsdl/localhost_9090/ProyectoHotelAD/NewWebService.wsdl")
     private NewWebService_Service service;
@@ -39,29 +36,21 @@ public class NewServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       response.setContentType("text/html;charset=UTF-8");
-         String usuario=request.getParameter("usuario");
-      String contra=request.getParameter("contra");
-      String result=inicarsecion(usuario,contra);
+        response.setContentType("text/html;charset=UTF-8");
+        String codigo1=request.getParameter("id");
+        String descripcion=request.getParameter("descripcion");
+      String precio1=request.getParameter("precio");
+      String piso1=request.getParameter("piso");
+      String numero_camas1=request.getParameter("numcamas");
+      String tipo=request.getParameter("descripcion");
+      String estado="Activo";
+      Double precio =Double.parseDouble(precio1);
+      Integer piso = Integer.parseInt(piso1);
+      Integer numero_camas=Integer.parseInt(numero_camas1);
+      Integer codigo=Integer.parseInt(codigo1);
+      modificarHabitacion(codigo,descripcion,precio,piso,numero_camas,estado);
       
-     
-      Gson gson=new Gson();
-      personaslista per=gson.fromJson(result,personaslista.class);
-    iniciarsecioniu per1 = new iniciarsecioniu();
-        
-        per1.setRecursoi(per.getPersona());
-        personas pers=new personas();
-        String privilegio=per1.privilegio();
-     if (privilegio.equals("Cliente"))
-     {
-         response.sendRedirect("cliente.jsp");
-     }
-      else if("Administrador".equals(privilegio))
-     {
-         response.sendRedirect("administrador.jsp");
-     } else if("Error".equals(privilegio)){
-          response.sendRedirect("Registrarse.jsp");
-      }  
+      response.sendRedirect("Aministradorhabitacion.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -103,11 +92,11 @@ public class NewServlet extends HttpServlet {
         return "Short description";
     }// </editor-fold>
 
-    private String inicarsecion(java.lang.String uaurio, java.lang.String name) {
+    private String modificarHabitacion(java.lang.Integer id, java.lang.String dese, java.lang.Double precio, java.lang.Integer piso, java.lang.Integer numeroCamas, java.lang.String estado) {
         // Note that the injected javax.xml.ws.Service reference as well as port objects are not thread safe.
         // If the calling of port operations may lead to race condition some synchronization is required.
         hotelws1.NewWebService port = service.getNewWebServicePort();
-        return port.inicarsecion(uaurio, name);
+        return port.modificarHabitacion(id, dese, precio, piso, numeroCamas,  estado);
     }
 
 }
