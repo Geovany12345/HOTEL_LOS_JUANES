@@ -7,7 +7,7 @@ package Constructores;
 
 /**
  *
- * @author Alejandro
+ * @author Alejandro M
  */
 public class personas {
     String identificacion;

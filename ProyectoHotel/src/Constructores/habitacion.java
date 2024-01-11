@@ -7,7 +7,7 @@ package Constructores;
 
 /**
  *
- * @author ALEJANDRO
+ * @author ALEJANDRO M
  */
 public class habitacion {
     Integer id_habitacion;
