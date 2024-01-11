@@ -58,7 +58,7 @@
                     <file>${file.reference.allure-commandline-2.22.4-javadoc.jar}</file>
                 </library>
                 <library dirs="200">
-                    <file>${file.reference.hibernate-core-3.6.0.Final.jar}</file>
+                    <file>${file.reference.hibernate-core-4.0.0.Final.jar}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
             </web-module-libraries>
