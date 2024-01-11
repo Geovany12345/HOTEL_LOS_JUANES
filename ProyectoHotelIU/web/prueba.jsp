@@ -28,7 +28,7 @@
             <center>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="imgs/Logo.png" alt="#" /></a>
+                <a class="navbar-brand" href="index.jsp"><img src="imgs/Logo.png" alt="#" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -157,7 +157,7 @@ out.println(result);
    ressult="<script>"
            +" alert('Error la habitacion ya se encuentra reservada ingrese nuevamente con otras fechas porfavor');"
        + "</script>";
-   out.print(ressult);
+   //out.print(ressult);
     %>
     </body>
 </html>

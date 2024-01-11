@@ -13,9 +13,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" crossorigin="anonymous"></script>
     </head>
     <body bgcolor="#C0C0C0">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="imgs/Logo.png" alt="#" /></a>
+                <a class="navbar-brand" href="index.jsp"><img src="imgs/Logo.png" alt="#" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -23,42 +25,60 @@
                 <div class="collapse navbar-collapse text-capitalize" id="nav-links">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <button class="nav-link" onclick="location.href='AdministradorReserva.jsp'">RESERVA </button>
+                            <button class="btn btn-primary" style="margin-right: 15px;" onclick="location.href='AdministradorReserva.jsp'">RESERVA </button>
                         </li>
                         <li class="nav-item">
-                            <button class="nav-link" onclick="location.href='AdministradorCliente.jsp'">CLIENTE</button>
+                            <button class="btn btn-primary" style="margin-right: 15px;" onclick="location.href='AdministradorCliente.jsp'">CLIENTE</button>
                         </li>
                         <li class="nav-item">
-                        <button class="nav-link" onclick="location.href='Aministradorhabitacion.jsp'">HABITACION</button>
+                        <button class="btn btn-primary" style="margin-right: 15px;" onclick="location.href='Aministradorhabitacion.jsp'">HABITACION</button>
                         </li>
-                       
-
-                   
-                        
-                        
                     </ul>
                          <li class="nav-item">
                           
-                            <button onclick="location.href='index.jsp'">CERRAR SESION</button>
+                            <button class="btn btn-secondary" onclick="location.href='index.jsp'">CERRAR SESION</button>
                         </li>
                 </div>
             </div>
         </nav>
         <img src="imgs/fondo.jpg" height="100%" width="100%">
-        <div id="contenidoDinamico" class="mt-1" height="60%">
+ <section>
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-1 col-lg-1 d-none d-md-block">
+             
+            </div>
+            <div class="col-md-10 col-lg-10 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
             <center><ul>
                 <li>
-                    <br><br><br><br>
-                    <button onclick="location.href='Ingresarcliente.jsp'" >Ingresar Cliente</button><br><br>
-                    <button onclick="location.href='mostrarpersonas.jsp'">Mostrar Cliente </button><br><br>
-                    <button onclick="location.href='modificarcliente1.jsp'">Modificar Cliente</button><br><br>
-                    <button onclick="location.href='eliminapersona1.jsp'">Eliminar Cliente</button>
-                    <br><br>
-                    <br><br>
+                     <div class="pt-1 mb-4">
+                    <button class="btn btn-dark btn-lg btn-block" onclick="location.href='Ingresarcliente.jsp'" >Ingresar Cliente</button>
+                    </div>
+                    <div class="pt-1 mb-4">
+                    <button class="btn btn-dark btn-lg btn-block" onclick="location.href='mostrarpersonas.jsp'">Mostrar Cliente </button>
+                    </div>
+                    <div class="pt-1 mb-4">
+                    <button class="btn btn-dark btn-lg btn-block" onclick="location.href='modificarcliente1.jsp'">Modificar Cliente</button>
+                    </div>
+                    <div class="pt-1 mb-4">
+                    <button class="btn btn-dark btn-lg btn-block" onclick="location.href='eliminapersona1.jsp'">Eliminar Cliente</button>
+                    </div>
+                 
                 </li>
             </ul>         
             </center>
+ </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>  
         
           <footer>
             <div class="container">

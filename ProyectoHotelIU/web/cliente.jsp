@@ -18,7 +18,7 @@
     <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="imgs/Logo.png" alt="#" /></a>
+                <a class="navbar-brand" href="index.jsp"><img src="imgs/Logo.png" alt="#" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -27,12 +27,12 @@
                     <ul class="navbar-nav ml-auto">
                       
                         <li class="nav-item">
-                            <button  class="nav-link" onclick="location.href='Clientereserva.jsp'">RESERVA</button>
+                            <button  class="btn btn-primary" style="margin-right: 15px;" onclick="location.href='Clientereserva.jsp'">RESERVA</button>
                         </li>
                     </ul>
                          <li class="nav-item">
                           
-                            <button onclick="location.href='index.jsp'">CERRAR SESION</button>
+                            <button class="btn btn-secondary" onclick="location.href='index.jsp'">CERRAR SESION</button>
                         </li>
                 </div>
             </div>

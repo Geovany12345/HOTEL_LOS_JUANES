@@ -15,7 +15,7 @@
     <body bgcolor="#C0C0C0">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="imgs/Logo.png" alt="#" /></a>
+                <a class="navbar-brand" href="index.jsp"><img src="imgs/Logo.png" alt="#" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -23,13 +23,13 @@
                 <div class="collapse navbar-collapse text-capitalize" id="nav-links">
                     <ul class="navbar-nav ml-auto">
                        <li class="nav-item active">
-                            <button class="nav-link" onclick="location.href='AdministradorReserva.jsp'">RESERVA </button>
+                            <button class="btn btn-primary" style="margin-right: 15px;" class="nav-link" onclick="location.href='AdministradorReserva.jsp'">RESERVA </button>
                         </li>
                         <li class="nav-item">
-                            <button class="nav-link" onclick="location.href='AdministradorCliente.jsp'">CLIENTE</button>
+                            <button class="btn btn-primary" style="margin-right: 15px;" class="nav-link" onclick="location.href='AdministradorCliente.jsp'">CLIENTE</button>
                         </li>
                         <li class="nav-item">
-                        <button class="nav-link" onclick="location.href='Aministradorhabitacion.jsp'">HABITACION</button>
+                        <button class="btn btn-primary" style="margin-right: 15px;" class="nav-link" onclick="location.href='Aministradorhabitacion.jsp'">HABITACION</button>
                         </li>
                       
                       
@@ -40,27 +40,49 @@
                     </ul>
                          <li class="nav-item">
                           
-                            <button onclick="location.href='index.jsp'">CERRAR SESION</button>
+                            <button class="btn btn-secondary" onclick="location.href='index.jsp'">CERRAR SESION</button>
                         </li>
                 </div>
             </div>
         </nav>
         <img src="imgs/fondo.jpg" height="100%" width="100%">
-        <div id="contenidoDinamico" class="mt-1" height="60%">
-            <center><ul>
+ <section>
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-1 col-lg-1 d-none d-md-block">
+             
+            </div>
+            <div class="col-md-10 col-lg-10 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+            <ul>
                 <li>
-                    <br><br><br><br>
-                    <button onclick="location.href='ingresarhabitacion.jsp'" >Ingresar habitación</button><br><br>
-                    <button onclick="location.href='MostrarHabitaciones.jsp'">Mostrar Todas las Habitaciónes </button><br><br>
-                  
-                    <button onclick="location.href='modificarhabitacion1.jsp'">Modificar Habitación</button><br><br>
-                    <button  onclick="location.href='eliminarhabitacion1.jsp'">Eliminar Habitación</button>
-                    <br><br>
-                    <br><br>
+              
+                    <div class="pt-1 mb-4">
+                    <button class="btn btn-dark btn-lg btn-block" onclick="location.href='ingresarhabitacion.jsp'" >Ingresar habitación</button>
+                     </div>
+                    <div class="pt-1 mb-4">
+                    <button class="btn btn-dark btn-lg btn-block" onclick="location.href='MostrarHabitaciones.jsp'">Mostrar Todas las Habitaciónes </button>
+                  </div>
+                    <div class="pt-1 mb-4">
+                    <button class="btn btn-dark btn-lg btn-block" onclick="location.href='modificarhabitacion1.jsp'">Modificar Habitación</button>
+                    </div>
+                    <div class="pt-1 mb-4">
+                    <button class="btn btn-dark btn-lg btn-block"  onclick="location.href='eliminarhabitacion1.jsp'">Eliminar Habitación</button>
+                    </div>
                 </li>
             </ul>         
-            </center>
+           
+</div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section> 
            <footer>
             <div class="container">
                 <div class="row">
