@@ -21,7 +21,7 @@ import java.util.Iterator;
 
 /**
  *
- * @author Yutokiva
+ * @author Alejandro M
  */
 @WebServlet(name = "Iniciarsecion", urlPatterns = {"/Iniciarsecion"})
 public class Iniciarsecion extends HttpServlet {
