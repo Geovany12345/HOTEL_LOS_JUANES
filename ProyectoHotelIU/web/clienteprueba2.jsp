@@ -30,7 +30,7 @@
                 <div class="collapse navbar-collapse text-capitalize" id="nav-links">
                     <ul class="navbar-nav ml-auto">
                        <li class="nav-item active">
-                            <button class="nav-link" onclick="location.href='Clientereserva.jsp'">RESERVA </button>
+                            <button  class="btn btn-primary" style="margin-right: 15px;"  onclick="location.href='Clientereserva.jsp'">RESERVA </button>
                         </li>
                         
                       
@@ -41,7 +41,7 @@
                     </ul>
                          <li class="nav-item">
                           
-                            <button onclick="location.href='index.jsp'">CERRAR SESION</button>
+                            <button class="btn btn-secondary" onclick="location.href='index.jsp'">CERRAR SESION</button>
                         </li>
                 </div>
             </div>
@@ -133,7 +133,7 @@ result=
        + "<label for=\"street2_id\" class=\"control-label\">Hasta</label>"
        + "<input type=\"string\" class=\"form-control\" id=\"street2_id\" value="+fecha+" step=\"1\" name=\"fechaareserva\" >"
     +"</div>"  ;
-out.println(result);
+//out.println(result);
   
     } catch (Exception ex) {
 	// TODO handle custom exceptions here

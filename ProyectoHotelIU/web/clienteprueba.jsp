@@ -22,12 +22,12 @@
                     <ul class="navbar-nav ml-auto">
                       
                         <li class="nav-item">
-                            <button  class="nav-link" onclick="location.href='Clientereserva.jsp'">RESERVA</button>
+                            <button  class="btn btn-primary" style="margin-right: 15px;"  onclick="location.href='Clientereserva.jsp'">RESERVA</button>
                         </li>
                     </ul>
                          <li class="nav-item">
                           
-                            <button onclick="location.href='index.jsp'">CERRAR SESION</button>
+                            <button class="btn btn-secondary" onclick="location.href='index.jsp'">CERRAR SESION</button>
                         </li>
                 </div>
             </div>
@@ -112,7 +112,7 @@
    ressult="<script>"
            +" alert('Error la habitacion ya se encuentra reservada ingrese nuevamente con otras fechas porfavor');"
        + "</script>";
-   out.print(ressult);
+  // out.print(ressult);
     %>
     </body>
 </html>

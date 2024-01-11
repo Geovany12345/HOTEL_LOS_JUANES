@@ -3,7 +3,7 @@
   <services/>
   <clients>
     <client name="NewWebService">
-      <wsdl-url>http://localhost:8080/ProyectoHotelAD/NewWebService?wsdl</wsdl-url>
+      <wsdl-url>http://localhost:9090/ProyectoHotelAD/NewWebService?wsdl</wsdl-url>
       <local-wsdl-file>localhost_9090/ProyectoHotelAD/NewWebService.wsdl</local-wsdl-file>
       <package-name forceReplace="true">hotelws1</package-name>
       <catalog-file>catalog.xml</catalog-file>
@@ -22,7 +22,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>http://localhost:8080/ProyectoHotelAD/NewWebService?wsdl</wsimport-option-value>
+          <wsimport-option-value>http://localhost:9090/ProyectoHotelAD/NewWebService?wsdl</wsimport-option-value>
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>xnocompile</wsimport-option-name>
