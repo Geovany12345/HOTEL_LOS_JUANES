@@ -9,7 +9,7 @@ import Constructores.habitacion;
 
 /**
  *
- * @author Alejandro
+ * @author Alejandro M
  */
 public class HabitacionAD extends habitacion{
       public String setSQLInsert() {

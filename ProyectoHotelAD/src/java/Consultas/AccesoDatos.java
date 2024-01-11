@@ -7,7 +7,7 @@ package Consultas;
 
 /**
  *
- * @author Alejandro
+ * @author Alejandro M
  */
 import java.sql.Connection;
 import java.sql.DriverManager;
