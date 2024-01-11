@@ -16,9 +16,9 @@ import java.sql.SQLException;
 public class Global {
 
     public static String driverclass = "org.postgresql.Driver";
-    public static String databaseURL = "jdbc:postgresql://localhost:5432/Hotel";
+    public static String databaseURL = "jdbc:postgresql://localhost:5432/HOTEL";
     public static String usuarioDB = "postgres";
-    public static String claveDB = "admin";
+    public static String claveDB = "12345";
     public static Connection connection = null;
 
     public static void conectar() {
